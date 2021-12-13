@@ -1,0 +1,14 @@
+@{
+    ViewData["Title"] = "Platforms";
+}
+@model IEnumerable<gamed.Models.PlatformModel>
+
+<div class="text-center">
+    <h1 class="display-4">platforms</h1>
+    @foreach (var item in Model)
+    {
+    <dl class="row">
+        <dt>@item.name</dt>
+    </dl>
+    }
+</div>

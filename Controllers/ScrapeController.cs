@@ -26,10 +26,11 @@ namespace gamed.Controllers
             return View();
         }
 
-        public IActionResult Consoles()
+        public IActionResult Platforms()
         {
-			
-            return View();
+			var platforms = Task.Run(() => _iGDBService.GetPlatforms());
+			platforms.Wait();
+			return View(platforms.Result);
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
