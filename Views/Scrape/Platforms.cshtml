@@ -8,7 +8,23 @@
     @foreach (var item in Model)
     {
     <dl class="row">
-        <dt>@item.name</dt>
+        <dt class="col">@item.name</dt>
+    </dl>
+    <dl class="row">
+        <dt class="col">Family</dt><dd>@item.platform_family</dd>
+        <dt class="col">Logo</dt><dd>@item.platform_logo</dd>
+        <dt class="col">Summary</dt><dd>@item.summary</dd>
+        <dt class="col">Updated</dt><dd>@item.updated_at</dd>
+        <dt class="col">Url</dt><dd>@item.url</dd>
+        <dt class="col">Versions</dt><dd>@item.versions</dd>
+        <dt class="col">Websites</dt><dd>@item.websites</dd>
+        <dt class="col">Created</dt><dd>@item.created_at</dd>
+        <dt class="col">Generation</dt><dd>@item.generation</dd>
+        <dt class="col">Slug</dt><dd>@item.slug</dd>
+        <dt class="col">Checksum</dt><dd>@item.checksum</dd>
+        <dt class="col">Category</dt><dd>@item.category</dd>
+        <dt class="col">Alt. Name</dt><dd>@item.alternative_name</dd>
+        <dt class="col">Abbreviation</dt><dd>@item.abbreviation</dd>
     </dl>
     }
 </div>
